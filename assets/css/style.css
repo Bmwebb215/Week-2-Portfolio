@@ -1,19 +1,47 @@
+:root {
+    --black: #000000;
+    --yellow: #fffb00;
+}
+
+
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #fff;
-    background-color: #0373fc;
+    background-color: var(--black);
 }
 
-h1{
-    justify-content: center;
-}
-
-nav ul {
-    list-style-type: none;
+span {
+    color: var(--yellow);
 }
 
 .bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+.nav a {
+    font-size: 25px;
+    font-weight: 300;
+    text-decoration: none;
+    margin-left: 35px;
+}
+
+
+
+.photo {
+    content: url(../images/Brandon-webb.jpg);
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
