@@ -13,6 +13,12 @@
     background-color: var(--black);
 }
 
+h2 {
+    display: flex;
+    flex-direction: column;
+    color: var(--yellow);
+}
+
 span {
     color: var(--yellow);
 }
@@ -34,14 +40,48 @@ span {
     font-weight: 300;
     text-decoration: none;
     margin-left: 35px;
+    transition: .4s;
 }
 
+.nav a:hover,
+.nav a.active {
+    color: var(--yellow);
+    font-weight: 600;
+}
 
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.homepage {
+    max-width: 700px;
+
+
+}
+
+.homepage h2 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.homepage h3 {
+    font-size: 55px;
+    font-weight: 700;
+    color: var(--yellow);
+}
 
 .photo {
     content: url(../images/Brandon-webb.jpg);
     height: 300px;
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 20%;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    float: right;
+    border-radius: 30px;
 }
